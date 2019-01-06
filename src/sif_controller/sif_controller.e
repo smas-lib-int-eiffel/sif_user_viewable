@@ -67,6 +67,14 @@ feature {NONE} -- Initialization basic interaction elements
 		ie_cancel: SIF_IE_EVENT
 				-- Basic, always available interaction element to cancel
 
+feature -- Execution
+
+	post_execute( si : SIF_SYSTEM_INTERFACE )
+			-- Perform post-execution of the current interactor
+		do
+			-- Intended to be empty for controllers, but can be used when neccessary		
+		end
+
 feature {NONE} -- Control flow
 
 	make_with_interaction_elements(an_interaction_elements_set: SIF_INTERACTION_ELEMENT_SORTED_SET)

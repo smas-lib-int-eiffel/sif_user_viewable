@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<system xmlns="http://www.eiffel.com/developers/xml/configuration-1-13-0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.eiffel.com/developers/xml/configuration-1-13-0 http://www.eiffel.com/developers/xml/configuration-1-13-0.xsd" name="sif_user_viewable" uuid="E2B7B8E7-C55E-425D-B22A-8472A2C5B09E" library_target="sif_user_viewable">
+	<target name="sif_user_viewable">
+		<description>Create a software product with a viewable user system interface based on the sif framework</description>
+		<root all_classes="true"/>
+		<file_rule>
+			<exclude>/CVS$</exclude>
+			<exclude>/EIFGENs$</exclude>
+			<exclude>/\.git$</exclude>
+			<exclude>/\.svn$</exclude>
+		</file_rule>
+		<option warning="true" void_safety="all" syntax="standard">
+			<assertions precondition="true" postcondition="true" check="true" invariant="true" loop="true" supplier_precondition="true"/>
+		</option>
+		<library name="base" location="$ISE_LIBRARY/library/base/base-safe.ecf"/>
+		<library name="sif_core" location="$ISE_LIBRARY/external/library/sif/core/sif_core.ecf" readonly="false"/>
+		<library name="sif_user" location="$ISE_LIBRARY/external/library/sif/user/sif_user.ecf" readonly="false"/>
+		<cluster name="sif_user_viewable" location="./src" recursive="true"/>
+	</target>
+</system>
