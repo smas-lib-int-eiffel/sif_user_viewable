@@ -12,7 +12,7 @@
 		<option warning="true" void_safety="all" syntax="standard">
 			<assertions precondition="true" postcondition="true" check="true" invariant="true" loop="true" supplier_precondition="true"/>
 		</option>
-		<library name="base" location="$ISE_LIBRARY/library/base/base-safe.ecf"/>
+		<library name="base" location="$ISE_LIBRARY/library/base/base.ecf"/>
 		<library name="sif_core" location="$ISE_LIBRARY/external/library/sif/core/sif_core.ecf" readonly="false"/>
 		<library name="sif_user" location="$ISE_LIBRARY/external/library/sif/user/sif_user.ecf" readonly="false"/>
 		<cluster name="sif_user_viewable" location="./src" recursive="true"/>
